@@ -87,7 +87,7 @@ public class Buyable
     public string name;
     public int cost;
     public Sprite image;
-    public int quantity;
-    public GameObject itemRef;
+    [HideInInspector] public int quantity;
+    [HideInInspector] public GameObject itemRef;
 
 }
