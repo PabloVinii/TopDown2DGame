@@ -62,10 +62,10 @@ public class ShopManager : MonoBehaviour
 
     public void BuyItem(Buyable buyable)
     {
-        if (coins >= buyable.cost)
+        if (coins >= buyable.cost && buyable.quantity >= 1)
         {
             coins -= buyable.cost;
-            buyable.quantity++;
+            buyable.quantity--;
             buyable.itemRef.transform.GetChild(0).GetComponent<Text>().text = buyable.quantity.ToString();
             // ApllyBuyable(buyable);
         }
@@ -87,7 +87,7 @@ public class Buyable
     public string name;
     public int cost;
     public Sprite image;
-    [HideInInspector] public int quantity;
+    public int quantity;
     [HideInInspector] public GameObject itemRef;
 
 }
