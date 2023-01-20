@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6387e706e310e64da3190190c02b9b8, type: 3}
+  m_Name: OpenChest
+  m_EditorClassIdentifier: 
+  id: 1
+  itemName: OpenChest
+  value: 1
+  image: {fileID: -1144117639, guid: f8787bebf1f071343a59af763599d3c4, type: 3}
