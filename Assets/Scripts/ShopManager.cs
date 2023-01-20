@@ -76,7 +76,7 @@ public class ShopManager : MonoBehaviour
     }
 
     private void OnGUI() {
-        coinText.text = "Coins: " + coins.ToString();
+        coinText.text = coins.ToString();
     }
 }
 
