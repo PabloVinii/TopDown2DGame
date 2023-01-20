@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   itemName: OpenChest
-  value: 1
+  quantity: 2
+  value: 150
   image: {fileID: -1144117639, guid: f8787bebf1f071343a59af763599d3c4, type: 3}

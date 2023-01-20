@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 4
   itemName: interrogation
+  quantity: 1
   value: 1000000
   image: {fileID: -836051926, guid: fa1586bb7d684b941b21ada3e2b3e7ab, type: 3}

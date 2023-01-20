@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   itemName: Axe
-  value: 2
+  quantity: 5
+  value: 10
   image: {fileID: 782275874, guid: fa1586bb7d684b941b21ada3e2b3e7ab, type: 3}
