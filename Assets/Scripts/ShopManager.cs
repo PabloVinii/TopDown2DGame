@@ -28,7 +28,6 @@ public class ShopManager : MonoBehaviour
             {
                 if (child.gameObject.name == "Quantity")
                 {
-                    Debug.Log("chegou aqui");
                     child.gameObject.GetComponent<Text>().text = buyable.quantity.ToString();
                 }
                 else if (child.gameObject.name == "Cost")
