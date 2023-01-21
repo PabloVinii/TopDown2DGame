@@ -7268,26 +7268,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 300
   buyables:
-  - name: Heart
-    cost: 10
-    image: {fileID: -1905301344, guid: fa1586bb7d684b941b21ada3e2b3e7ab, type: 3}
-    quantity: 10
-    itemRef: {fileID: 0}
-  - name: Pickaxe
-    cost: 50
-    image: {fileID: -615361753, guid: fa1586bb7d684b941b21ada3e2b3e7ab, type: 3}
-    quantity: 2
-    itemRef: {fileID: 0}
-  - name: Axe
-    cost: 55
-    image: {fileID: 782275874, guid: fa1586bb7d684b941b21ada3e2b3e7ab, type: 3}
-    quantity: 2
-    itemRef: {fileID: 0}
-  - name: House
-    cost: 150000
-    image: {fileID: -1874371909, guid: fa1586bb7d684b941b21ada3e2b3e7ab, type: 3}
-    quantity: 1
-    itemRef: {fileID: 0}
+  - {fileID: 11400000, guid: f4728e1aded757f478ac9d4a195ba34f, type: 2}
+  - {fileID: 11400000, guid: 94ef269f4f8da6348b7aff429810fd90, type: 2}
+  - {fileID: 11400000, guid: 20ebd2db7683a104f92c93d84daf3221, type: 2}
+  - {fileID: 11400000, guid: 9ebff870985958e4cb5d8952044c76b6, type: 2}
   coinText: {fileID: 1569936284}
   shopUI: {fileID: 1244350129}
   shopContent: {fileID: 1624647526}

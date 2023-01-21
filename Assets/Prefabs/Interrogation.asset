@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6387e706e310e64da3190190c02b9b8, type: 3}
-  m_Name: OpenChest
+  m_Name: Interrogation
   m_EditorClassIdentifier: 
-  id: 1
-  itemName: OpenChest
-  value: 1
-  image: {fileID: -1144117639, guid: f8787bebf1f071343a59af763599d3c4, type: 3}
+  id: 4
+  itemName: interrogation
+  quantity: 1
+  value: 1000000
+  image: {fileID: -836051926, guid: fa1586bb7d684b941b21ada3e2b3e7ab, type: 3}

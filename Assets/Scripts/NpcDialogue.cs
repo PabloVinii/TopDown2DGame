@@ -8,7 +8,7 @@ public class NpcDialogue : MonoBehaviour
     
     public string[] dialogueNPC;
     public int dialogueIndex;
-    
+    public GameObject DialogueIcon;
     public GameObject dialoguePanel;
     public Text dialogueText;
 
@@ -80,7 +80,8 @@ public class NpcDialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player"))
-        {
+        {   
+            DialogueIcon.SetActive(true);
             readyToSpeak = true;
         }
     }
@@ -88,6 +89,7 @@ public class NpcDialogue : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
          if (other.CompareTag("Player"))
         {
+            DialogueIcon.SetActive(false);
             readyToSpeak = false;
         }
     }

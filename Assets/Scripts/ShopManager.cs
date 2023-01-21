@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class ShopManager : MonoBehaviour
 {
-    public static ShopManager instance;
+    public static ShopManager Instance;
 
     public int coins = 300;
-    public Buyable[] buyables;
+    public Item[] buyables;
 
     public Text coinText;
     public GameObject shopUI;
@@ -15,25 +15,15 @@ public class ShopManager : MonoBehaviour
 
     void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    
-        DontDestroyOnLoad(gameObject);
+        Instance = this;
     }
 
     void Start()
     {
-        foreach(Buyable buyable in buyables)
+        foreach(Item buyable in buyables)
         {
             GameObject item = Instantiate(itemPrefab, shopContent);
 
-            buyable.itemRef = item;
             foreach(Transform child in item.transform)
             {
                 if (child.gameObject.name == "Quantity")
@@ -42,7 +32,7 @@ public class ShopManager : MonoBehaviour
                 }
                 else if (child.gameObject.name == "Cost")
                 {
-                    child.gameObject.GetComponent<Text>().text = "$" + buyable.cost.ToString();
+                    child.gameObject.GetComponent<Text>().text = "$" + buyable.value.ToString();
                 }
                 else if (child.gameObject.name == "Name")
                 {
@@ -60,15 +50,16 @@ public class ShopManager : MonoBehaviour
         }   
     }
 
-    public void BuyItem(Buyable buyable)
+    public void BuyItem(Item buyable)
     {
-        if (coins >= buyable.cost && buyable.quantity >= 1)
+        if (coins >= buyable.value && buyable.quantity >= 1)
         {
-            coins -= buyable.cost;
             buyable.quantity--;
-            buyable.itemRef.transform.GetChild(0).GetComponent<Text>().text = buyable.quantity.ToString();
+            coins -= buyable.value;
+            buyable.quantity.ToString();
             // ApllyBuyable(buyable);
         }
+
     }
     public void ToggleShop()
     {
@@ -78,16 +69,4 @@ public class ShopManager : MonoBehaviour
     private void OnGUI() {
         coinText.text = coins.ToString();
     }
-}
-
-
-[System.Serializable]
-public class Buyable
-{
-    public string name;
-    public int cost;
-    public Sprite image;
-    public int quantity;
-    [HideInInspector] public GameObject itemRef;
-
 }

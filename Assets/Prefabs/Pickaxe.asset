@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   itemName: Pickaxe
-  value: 3
+  quantity: 3
+  value: 110
   image: {fileID: -615361753, guid: fa1586bb7d684b941b21ada3e2b3e7ab, type: 3}
